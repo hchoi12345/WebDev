@@ -8,18 +8,125 @@
 		}
 		h3{
 			text-transform: uppercase;
+			color: blue;
 		}
 		.thumbnail{
-			
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin: 10px;
+			border-width: 5px;
+			padding: 10px;
+			width: 250px;
+			border-style: solid;
+			border-color: red;
 		}
 	</style>
 </head>
 
-<h3>Grilled Cheese Sandwhich<h3>
+<head>
+  <title>Positioning</title>
+  <style type="text/css">
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    header{
+      background-color: orange;
+      width: 100%;
+      height: 100px;
+    }
+
+    /*decendent selectors to only target h1 elements who have a parent elemnt of header*/
+    header h1{
+      color: green;
+      display: inline-block;
+      max-width: 60%;
+      line-height: 100px;
+      overflow: hidden;
+    }
+
+    h3{
+		text-transform: uppercase;
+		color: blue;
+	}
+	.thumbnail{
+		width: 300px;
+		height: 300px;
+		float: left;
+		margin: 10px;
+		border-width: 5px;
+		padding: 10px;
+		width: 250px;
+		border-style: solid;
+		border-color: red;
+	}
+
+    /*make a right side navigation tag using text align and inline block*/
+    header nav{
+      display: inline-block;
+      float: right;
+      height: 90px;
+      overflow: hidden;
+    }
+
+    nav ul{
+      list-style-type: none;
+      text-align: right;
+      line-height: 100px;
+    }
+
+    nav ul li{
+      display: inline-block;
+      margin: auto -2px;
+    }
+
+    nav ul li a{
+      display: block;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover{
+      background-color: black;
+    }
+
+    p{
+      margin: 1em 0;
+
+    }
+
+    .sticky-navbar{
+      position: fixed;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="sticky-navbar">
+  <h1>Grilled Cheese Sandwhich</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Description</a></li>
+      <li><a href="#">Ingredients</a></li>
+      <li><a href="#">Directions</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h3>Grilled Cheese Sandwhich</h3>
 <body> 
-	<img src="GrilledCheese1.jpg" style="width:300px;height:300px;">
-	<img src="GrilledCheese2.jpg" style="width:500x;height:200px;">
-	<img src="GrilledCheese3.jpeg" style="width:300px;height:200px;">
+	<img src="GrilledCheese1.jpg" style="width:300px;height:300px; float: left; padding: 10px">
+	<img src="GrilledCheese2.jpg" style="width:350px;height:300px; float:left; padding: 10px">
+	<img src="GrilledCheese3.jpeg" style="width:400px;height:300px; float:left; padding: 10px"">
+	<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 	<div class="thumbnail">Ingredients:
 	 	<li>4 slices white bread</li>
 		<li>3 tablespoons butter, divided</li>
