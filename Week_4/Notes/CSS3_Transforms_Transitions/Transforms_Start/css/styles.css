@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*fixed --> stick the image on the page even when scrolling*/
+    /*no-repeat is no repeating image on any axis*/
+    /*center center is both x and y axis respectively*/
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    /*css3 property check for compatability*/
+    background-size: cover;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.polaroid{
+    width: 240px;
+    display: inline-block;
+    margin: 20px;
+    /*position relative is making this container the border of .polaroid p instead the whole page*/
+    position: relative;
+}
+
+.polaroid img{
+    width: 100%;
+    height: auto;
+    border: 10px solid cornsilk;
+    border-bottom-width: 45px;
+    /*css3 property: Be sure to check for prefixes and compatability*/
+    /*box-shadow: x shadow | y shadow | blur | spread | color;*/
+    /*chrome and safari older versions*/
+    -webkit-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.7);
+    /*firefox*/
+    -moz-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.7);
+    /*opera*/
+    -o-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.7);
+    /*microsoft*/
+    -ms-box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.7);
+    box-shadow: 10px 10px 10px 5px rgba(10, 10, 10, 0.7);
+}
+
+.polaroid p{
+    position: absolute;
+    text-align: center;
+    width: 260px;
+    bottom: 14px;
+    color: #888;
+}
