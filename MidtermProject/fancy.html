@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fancy</title>
+  <style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    
+    header {
+        background-color: lavender;
+        width: 100%;
+        height: 100px;
+        z-index: 3;
+        position: absolute;
+    }
+    
+    header h1 {
+        color: blue;
+        display: inline-block;
+        max-width: 20%;
+        line-height: 100px;
+        padding: 0 30px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    
+    header nav {
+        display: inline-block;
+        float: right;
+        height: 100px;
+        overflow: hidden;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 100px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto -2px;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0 60px;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    p {
+        margin: 1em 0;
+    }
+    
+
+    .container{
+    width:900px;
+    margin:0 auto;
+    }
+
+    .polaroid {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+    margin:30px;
+    margin-top: 225px;
+    }
+
+    .polaroid img {
+    width:100%;
+    height:auto;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    }
+
+    .polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font: 400 18px cursive;
+    color: #888;
+    }
+    
+    .sticky-navbar {
+        position: fixed;
+        z-index: 4;
+    }
+
+    div.search{
+        position: absolute;
+        left:0px;
+        top:0px;
+        width: 94%;
+        padding-left: 10px;
+        margin-top: 110px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <header class="sticky-navbar">
+        <h1><a href ="index.html">Let's Eat</a></h1>
+        <nav>
+            <ul>
+                <li><a href="quick.html">Quick</a></li>
+                <li><a href="fancy.html">Fancy</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="search"><img src ="img/search.png" alt ="searchbar"></div>
+
+        <div class="polaroid">
+            <p>Dovetail</p>
+            <a href="dovetail.html"><img src="img/dovetail.jpg"></a>
+        </div>
+        <div class="polaroid">
+            <p>Jean-Georges</p>
+            <a href="jean-georges.html"><img src="img/jean-georges.jpg"></a>
+        </div>
+        <div class="polaroid">
+            <p>Daniel</p>
+            <a href="daniel.html"><img src="img/daniel.jpg"></a>
+        </div>
+</main>
+</body>
+</html>
