@@ -1,1 +1,10 @@
-http://sites.bxmc.poly.edu/~hyuntaechoi/WebDev/index.php/2017/04/18/final-proposal/
+Plan:
+
+Continuing the idea from my midterm
+Changing “fancy” and “quick” restaurants to cuisine type
+Might change it to price range
+Bootstrap Nav – Drop Down Menu for price range/cuisine
+Bootstrap Carousel/Slider – different pictures –> different angles in the restaurant and outside
+Change the search bar into an input
+Using Google Maps to show the location of restaurant
+Use jquery on home page to greet the customer
