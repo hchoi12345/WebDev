@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Japanese</title>
+  <style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    
+    header {
+        background-color: lavender;
+        width: 100%;
+        height: 100px;
+        z-index: 3;
+        position: absolute;
+    }
+    
+    header h1 {
+        color: blue;
+        display: inline-block;
+        max-width: 20%;
+        line-height: 100px;
+        padding: 0 30px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    
+    header nav {
+        display: inline-block;
+        float: right;
+        height: 100px;
+        overflow: hidden;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 100px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto -2px;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0 60px;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    p {
+        margin: 1em 0;
+    }
+    
+
+    .container{
+    width:900px;
+    margin:0 auto;
+    }
+
+    .polaroid {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+    margin:30px;
+    margin-top: 225px;
+    }
+
+    .polaroid img {
+    width:100%;
+    height:auto;
+    border: 10px solid #FEF9EF;
+    border-bottom: 45px solid #FEF9EF;
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
+    }
+
+    .polaroid p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    font: 400 18px cursive;
+    color: #888;
+    }
+    
+    .sticky-navbar {
+        position: fixed;
+        z-index: 4;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+    <header class="sticky-navbar">
+        <h1><a href ="index.html">Let's Eat</a></h1>
+        <nav>
+            <ul>
+                <li><a href="Italian.html">Italian</a></li>
+                <li><a href="Japanese.html">Japanese</a></li>
+                <li><a href="American.html">American</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <div class="polaroid">
+            <p>Kouzan</p>
+            <a href="kouzan.html"><img src="img/kouzan.jpg"></a>
+        </div>
+        <div class="polaroid">
+            <p>Yuka</p>
+            <a href="yuka.html"><img src="img/yuka.jpg"></a>
+        </div>
+        <div class="polaroid">
+            <p>Sushi Yasaka</p>
+            <a href="sushiyasaka.html"><img src="img/sushiyasaka.jpg"></a>
+        </div>
+</main>
+</body>
+</html>

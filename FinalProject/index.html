@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Eat</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    
+    header {
+        background-color: lavender;
+        width: 100%;
+        height: 100px;
+        z-index: 3;
+        position: absolute;
+    }
+    
+    header h1 {
+        color: blue;
+        display: inline-block;
+        max-width: 20%;
+        line-height: 100px;
+        padding: 0 30px;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    
+    header nav {
+        display: inline-block;
+        float: right;
+        height: 100px;
+        overflow: hidden;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        line-height: 100px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: auto -2px;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0 60px;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    p {
+        margin: 1em 0;
+    }
+    
+    .sticky-navbar {
+        position: fixed;
+        z-index: 4;
+    }
+
+    div.nyc{
+        position: static;
+        z-index: 1;
+    }
+
+    form.container {
+        width: 300px;
+        margin: 0;
+        line-height: 40px;
+        margin-top: 8%;
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: absolute;
+        text-align: center;
+        margin-left: 500px;
+    }
+
+    div.choose{
+        text-decoration-color: white;
+        color: white;
+        padding: 10px;
+    }
+
+    input.button{
+        padding: 5px;
+        margin: 2px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<script>
+function getIndex() {
+    document.getElementById("demo").innerHTML =
+    document.getElementById("mySelect").selectedIndex;
+}
+</script>
+
+<form class="container">
+    <div class="choose">Select your Cuisine:</div>
+
+    <input class = "button" type="button" onclick="document.location='file:///C:/Users/Harvey/Desktop/WebDevClass/WebDev/FinalProject/Italian.html'; return false;"
+    value="Italian">
+    <input class = "button" type="button" onclick="document.location='file:///C:/Users/Harvey/Desktop/WebDevClass/WebDev/FinalProject/American.html'; return false;"
+    value="American">
+    <input class = "button" type="button" onclick="document.location='file:///C:/Users/Harvey/Desktop/WebDevClass/WebDev/FinalProject/Japanese.html'; return false;"
+    value="Japanese">
+    </form>
+
+<p id="demo"></p>
+</body>
+
+
+<div class="nyc"><img src ="img/nyc.jpg" alt="newyorkcity" style="width:100%;"></div>
+</body>
+
+</html>
